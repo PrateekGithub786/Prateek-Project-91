@@ -1,3 +1,8 @@
+    var player1_name = localStorage.getItem("player1");
+    var player2_name = localStorage.getItem("player2");
+    document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name;
+    document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name;
+    
 function send(){
     number1 = document.getElementById("number1").value;
     number2 = document.getElementById("number2").value;
